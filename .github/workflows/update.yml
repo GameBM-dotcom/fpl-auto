@@ -1,0 +1,33 @@
+name: Update FPL Data
+
+on:
+  schedule:
+    # Jalan otomatis setiap hari jam 06:00 UTC (13:00 WIB)
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}  # Bisa juga dijalankan manual lewat tombol "Run workflow" di GitHub
+
+permissions:
+  contents: write  # Perlu izin ini agar workflow bisa commit file JSON hasil update
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Jalankan script pengambil data FPL
+        run: python fetch_fpl.py
+
+      - name: Commit dan push hasil update
+        run: |
+          git config --global user.name "fpl-auto-bot"
+          git config --global user.email "actions@github.com"
+          git add data/latest.json
+          git diff --staged --quiet && echo "Tidak ada perubahan data" || git commit -m "Update data FPL otomatis"
+          git push
