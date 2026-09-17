@@ -20,7 +20,7 @@
   },
   "active_chip": null,
   "chips_used": null,
-  "overall_rank": 1711482,
+  "overall_rank": 1711464,
   "overall_points": 283,
   "squad": [
     {
@@ -181,8 +181,8 @@
       "price": 7.8,
       "form": "8.2",
       "total_points": 33,
-      "status": "a",
-      "news": "",
+      "status": "d",
+      "news": "Unspecified injury - 75% chance of playing",
       "is_captain": false,
       "is_vice_captain": false,
       "multiplier": 1,
