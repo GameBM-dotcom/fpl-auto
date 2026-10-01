@@ -20,7 +20,7 @@
   },
   "active_chip": null,
   "chips_used": null,
-  "overall_rank": 975914,
+  "overall_rank": 975912,
   "overall_points": 345,
   "squad": [
     {
@@ -43,7 +43,7 @@
       "full_name": "James Tarkowski",
       "team": "Everton",
       "position": "DEF",
-      "price": 6.1,
+      "price": 6.2,
       "form": "8.3",
       "total_points": 43,
       "status": "a",
@@ -59,7 +59,7 @@
       "team": "Arsenal",
       "position": "DEF",
       "price": 8.0,
-      "form": "5.0",
+      "form": "4.0",
       "total_points": 25,
       "status": "a",
       "news": "",
