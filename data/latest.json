@@ -20,7 +20,7 @@
   },
   "active_chip": null,
   "chips_used": null,
-  "overall_rank": 3764474,
+  "overall_rank": 3764460,
   "overall_points": 476,
   "squad": [
     {
@@ -43,7 +43,7 @@
       "full_name": "Joško Gvardiol",
       "team": "Man City",
       "position": "DEF",
-      "price": 5.8,
+      "price": 5.7,
       "form": "1.7",
       "total_points": 42,
       "status": "a",
@@ -58,7 +58,7 @@
       "full_name": "Jayden Bogle",
       "team": "Leeds",
       "position": "DEF",
-      "price": 4.7,
+      "price": 4.8,
       "form": "2.7",
       "total_points": 50,
       "status": "a",
